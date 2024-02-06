@@ -32,7 +32,15 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url('./Images/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
