@@ -1,0 +1,23 @@
+.header {
+    /* background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    text-align: center; */
+    position: sticky;
+  top: 0;
+  background-color: #3498db;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  z-index: 999;
+  }
+  
+  .header-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .header-subtitle {
+    font-size: 18px;
+  }
+  

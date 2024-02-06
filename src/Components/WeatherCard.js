@@ -1,7 +1,7 @@
 import React from 'react';
 import './WeatherCard.css';
 
-export const WeatherCard = ({
+const WeatherCard = ({
     name,
     lon,
     lat,
@@ -16,7 +16,7 @@ export const WeatherCard = ({
 }) => {
     console.log("::::::::>Hello")
     return (
-        <div className="card text-white bg-dark mb-3">
+        <div className="card text-white bg-dark mb-3 my-3" id='card-opacity'>
             <div className="card-header">
                 <h2>Weather Report of {name}</h2>
             </div>
@@ -26,6 +26,7 @@ export const WeatherCard = ({
                     icon&&(<img
                     src={`https://openweathermap.org/img/wn/${icon}.png`}
                     alt="Weather Icon"
+                    style={{color: "white"}}
                 />)
                 } 
                 <p className="card-text">Temperature: {temp.toFixed()}°C</p>
@@ -37,3 +38,5 @@ export const WeatherCard = ({
         </div>
     );
 };
+
+export default WeatherCard;
